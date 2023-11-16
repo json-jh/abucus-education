@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply w-full h-full;
+}
+body {
+  @apply w-full h-full;
+  @apply bg-neutral-100 dark:bg-neutral-800;
+  @apply text-black dark:text-white;
+
+  > div[id='__nuxt'] {
+    @apply w-full h-full;
+  }
+}
+
+input:focus-visible,textarea:focus-visible {
+  outline: none;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded bg-neutral-900 dark:bg-neutral-100
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  @apply p-2 rounded bg-neutral-900 dark:bg-neutral-100
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded bg-neutral-100 dark:bg-neutral-900
+}
+
+.page-enter-active, .page-leave-active {
+  transition: all 0.2s;
+}
+
+.page-enter-from, .page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+button:disabled {
+  @apply opacity-60 cursor-not-allowed;
+
+  &:hover {
+    @apply text-black dark:text-white;
+  }
+}
