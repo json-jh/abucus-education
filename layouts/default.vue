@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="w-full">
     <LayoutHeader />
-    <div class="flex flex-nowrap">
+    <div class="flex flex-nowrap w-full">
       <slot />
     </div>
   </div>
