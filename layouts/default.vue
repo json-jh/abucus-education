@@ -2,6 +2,7 @@
   <div class="w-full">
     <LayoutHeader />
     <div class="flex flex-nowrap w-full">
+      <LayoutAside />
       <slot />
     </div>
   </div>

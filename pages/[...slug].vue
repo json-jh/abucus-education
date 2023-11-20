@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="default">
-    <div class="flex-auto flex flex-nowrap">
-      <div ref="refContent" class="flex-auto overflow-hidden p-2">
+    <div class="flex-1 flex flex-nowrap">
+      <div ref="refContent" class="flex-1 overflow-hidden p-2">
         <ContentDoc>
           <template #empty>
             <h1>Document is empty</h1>
