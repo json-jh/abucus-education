@@ -8,10 +8,10 @@
 
 <script lang="ts" setup>
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
-console.log(navigation)
 </script>
 
-<style lang="scss" scoped>
-
-
+<style lang="scss">
+:root {
+  --aside-width: 16rem;
+}
 </style>

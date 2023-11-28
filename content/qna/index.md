@@ -1,5 +1,0 @@
----
-qna index
----
-
-qna index

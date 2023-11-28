@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="default">
-    <div class="flex-1 flex flex-nowrap">
-      <div ref="refContent" class="flex-1 overflow-hidden p-2">
+    <div class="w-[calc(100%-var(--aside-width))] flex flex-nowrap">
+      <div ref="elemContent" class="flex-shrink overflow-hidden p-2">
         <ContentDoc>
           <template #empty>
             <h1>Document is empty</h1>
@@ -24,9 +24,9 @@ useHead({
   title: contentQuery[0]?.title
 })
 
-const refContent = ref<HTMLElement>()
+const elemContent = ref<HTMLElement>()
 const options = {
-  root: refContent.value,
+  root: elemContent.value,
   rootMargin: '0px',
   threshold: 0.5
 }
@@ -44,7 +44,7 @@ onMounted(() => {
     })
   }, options)
 
-  refContent.value?.querySelectorAll('[id]').forEach((element) => {
+  elemContent.value?.querySelectorAll('[id]').forEach((element) => {
     observer.observe(element)
   })
 })

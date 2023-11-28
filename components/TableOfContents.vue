@@ -2,7 +2,7 @@
   <div class="w-full sticky top-24">
     <nav>
       <h4 class="mb-3">
-        <b>Table of contents</b>
+        <b class="truncate">Table of contents</b>
       </h4>
       <ul class="flex flex-col gap-1 overflow-hidden">
         <template v-if="links.length">
