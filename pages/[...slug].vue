@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="default">
     <div class="w-[calc(100%-var(--aside-width))] flex flex-nowrap">
-      <div ref="elemContent" class="flex-shrink overflow-hidden p-2">
+      <div ref="elemContent" class="flex-1 overflow-hidden p-2">
         <ContentDoc>
           <template #empty>
             <h1>Document is empty</h1>

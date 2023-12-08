@@ -4,7 +4,7 @@
       <div class="flex-auto dark:text-blue-500">
         
       </div>
-      <div class="flex-auto flex flex-nowrap justify-end">
+      <div class="flex-auto flex flex-nowrap justify-end items-center">
         <ConfigColorMode />
       </div>
     </div>
